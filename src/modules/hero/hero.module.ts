@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 
 import { HeroController } from './controllers';
-import { HeroMockService, IHeroService } from './serices';
+import { HeroMockService, IHeroService } from './services';
 
 @Module({
   controllers: [HeroController],
