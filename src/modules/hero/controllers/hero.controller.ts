@@ -9,8 +9,8 @@ import {
 } from '@nestjs/common';
 
 import { IHeroService } from '../services';
-import { CreateHeroRequestDto, HeroDto, UpdateHeroRequestDto } from '../dtos';
-import { ParamIdDto } from '../../../core/dtos/param-id.dto';
+import { CreateHeroRequestDto, HeroDto, UpdateHeroRequestDto } from '../dto';
+import { ParamIdDto } from '../../../core/dto/param-id.dto';
 
 @Controller('hero')
 export class HeroController {

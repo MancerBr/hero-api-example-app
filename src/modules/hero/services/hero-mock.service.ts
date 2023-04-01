@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 import { Hero } from '../models';
 import { IHeroService } from './abstracts';
-import { CreateHeroRequestDto, HeroDto, UpdateHeroRequestDto } from '../dtos';
+import { CreateHeroRequestDto, HeroDto, UpdateHeroRequestDto } from '../dto';
 
 @Injectable()
 export class HeroMockService implements IHeroService {

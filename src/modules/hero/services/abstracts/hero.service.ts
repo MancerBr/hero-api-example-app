@@ -2,7 +2,7 @@ import {
   CreateHeroRequestDto,
   HeroDto,
   UpdateHeroRequestDto,
-} from '../../dtos';
+} from '../../dto';
 
 export abstract class IHeroService {
   public abstract getHeroes(): Promise<HeroDto[]>;
