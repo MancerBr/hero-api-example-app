@@ -39,7 +39,6 @@ export class HeroMockService implements IHeroService {
   ): Promise<HeroDto> {
     this.heroes = this.heroes.map((hero: Hero) => {
       if (hero.id === id) {
-        console.log('UPDATE????', updateHeroObject);
         return {
           ...hero,
           ...updateHeroObject,
@@ -47,7 +46,6 @@ export class HeroMockService implements IHeroService {
       }
       return hero;
     });
-    console.log('1', this.heroes);
     return this.findHeroByIdAsync(id);
   }
 
@@ -60,7 +58,6 @@ export class HeroMockService implements IHeroService {
         reject(new NotFoundException());
         return;
       }
-      console.log('2', this.heroes);
       resolve(hero);
     });
   }

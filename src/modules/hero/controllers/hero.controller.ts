@@ -23,7 +23,6 @@ export class HeroController {
 
   @Get(':id')
   getOne(@Param() param: ParamIdDto): Promise<HeroDto> {
-    console.log('param', param);
     return this.heroService.getHeroById(param.id);
   }
 
